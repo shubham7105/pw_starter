@@ -74,9 +74,10 @@ jobs:
               ## Human Review Required
               **Required:** Yes/No — **Level:** Low/Medium/High — **Reason:** ...
               End with:
+              reviewers: pr-architecture-reviewer, pr-security-reviewer, pr-locator-standards-reviewer
               checklist: CODE_REVIEW_GUIDELINES.md
           claude_args: >-
-            --allowedTools "Read,Grep,Glob,Bash(git diff:*),Bash(git status:*),Bash(git log:*),Write"
+            --allowedTools "Agent,Task,Read,Grep,Glob,Bash(git diff:*),Bash(git status:*),Bash(git log:*),Write"
 
       - name: Post inline review
         env:

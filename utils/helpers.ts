@@ -22,3 +22,4 @@ export async function loginViaUI(page: Page): Promise<void> {
 export function parseCurrency(value: string): number {
   return parseFloat(value.replace(/[^0-9.]/g, ''));
 }
+// trivial change to open a test PR
